@@ -1,5 +1,9 @@
+Select Only the Debit Closing Balance..................
+
 SELECT $Name, $ClosingBalance FROM Ledger WHERE $$IsDr:$ClosingBalance
 
+Select The name and Closing Balances of ledger with (-) signs for Amount Column
+ 
 Select $Name, $Parent, $_PrimaryGroup, $$AscrAmt:$ClosingBalance from ledger
 
 Select $Name, $Parent, $_PrimaryGroup, $$AscrAmt:$ClosingBalance as Closing_Balance from ledger
