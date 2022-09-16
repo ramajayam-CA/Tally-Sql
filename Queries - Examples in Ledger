@@ -1,0 +1,48 @@
+
+Selecting all Ledger names
+  
+  Select * from Ledger 
+
+
+
+Select $Name from Ledger
+
+Ledger name with GSTIN
+
+Select $Name, $PARTYGSTIN from ledger
+
+Select $Name, $PARTYGSTIN from ledger where $Parent Like "%Sundry Debtors%"
+
+
+Select $Name, $Parent, $PARTYGSTIN from ledger where $Parent Like "%Sundry Debtors%"
+
+Select $Name, $Parent, $PARTYGSTIN from ledger where $Parent Like "%Sundry creditors"
+
+Select $Name, $Parent, $PARTYGSTIN from ledger where $Parent Like "%Sundry creditors%" or $Parent Like "%Sundry Debtors%" 
+
+Select $Name, $Parent, $PARTYGSTIN from ledger where $Parent Like "%Sundry creditors%" or $Parent Like "%Sundry Debtors%"  and $PartyGSTIN is not null
+
+Select $Name, $Parent, $PARTYGSTIN from ledger where $Parent Like "%Sundry creditors%" or $Parent Like "%Sundry Debtors%"  and $PartyGSTIN is null
+
+Select $Name, $Parent, $_PrimaryGroup, $ClosingBalance from ledger
+
+SELECT $Name, $ClosingBalance FROM Ledger WHERE $$IsDr:$ClosingBalance
+
+Select $Name, $Parent, $_PrimaryGroup, $$AscrAmt:$ClosingBalance from ledger
+
+Select $Name, $Parent, $_PrimaryGroup, $$AscrAmt:$ClosingBalance as Closing_Balance from ledger
+
+***String Start with the word Sundry Creditors
+Select $Name, $Parent, $PARTYGSTIN from ledger where $Parent Like "%Sundry creditors"
+
+***String is contains the word Sundry Creditors
+Select $Name, $Parent, $PARTYGSTIN from ledger where $Parent Like "%Sundry creditors%"
+
+***String end with the word Sundry Creditors
+Select $Name, $Parent, $PARTYGSTIN from ledger where $Parent Like "Sundry creditors%"
+
+***String is contains the word S any where in the parent string
+Select $Name, $Parent, $PARTYGSTIN from ledger where $Parent Like "%S%"
+
+
+Select $Name, $Parent, $_PrimaryGroup, $OpeningBalance, $ClosingBalance, $Isrevenue from ledger 
