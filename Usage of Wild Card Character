@@ -1,0 +1,11 @@
+***String Start with the word Sundry Creditors
+Select $Name, $Parent, $PARTYGSTIN from ledger where $Parent Like "%Sundry creditors"
+
+***String is contains the word Sundry Creditors
+Select $Name, $Parent, $PARTYGSTIN from ledger where $Parent Like "%Sundry creditors%"
+
+***String end with the word Sundry Creditors
+Select $Name, $Parent, $PARTYGSTIN from ledger where $Parent Like "Sundry creditors%"
+
+***String is contains the word S any where in the parent string
+Select $Name, $Parent, $PARTYGSTIN from ledger where $Parent Like "%S%"
