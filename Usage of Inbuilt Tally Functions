@@ -1,0 +1,5 @@
+SELECT $Name, $ClosingBalance FROM Ledger WHERE $$IsDr:$ClosingBalance
+
+Select $Name, $Parent, $_PrimaryGroup, $$AscrAmt:$ClosingBalance from ledger
+
+Select $Name, $Parent, $_PrimaryGroup, $$AscrAmt:$ClosingBalance as Closing_Balance from ledger
