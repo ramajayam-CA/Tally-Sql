@@ -1,0 +1,12 @@
+Select $Name, $PARTYGSTIN from ledger where $Parent Like "%Sundry Debtors%"
+
+
+Select $Name, $Parent, $PARTYGSTIN from ledger where $Parent Like "%Sundry Debtors%"
+
+Select $Name, $Parent, $PARTYGSTIN from ledger where $Parent Like "%Sundry creditors"
+
+Select $Name, $Parent, $PARTYGSTIN from ledger where $Parent Like "%Sundry creditors%" or $Parent Like "%Sundry Debtors%" 
+
+Select $Name, $Parent, $PARTYGSTIN from ledger where $Parent Like "%Sundry creditors%" or $Parent Like "%Sundry Debtors%"  and $PartyGSTIN is not null
+
+Select $Name, $Parent, $PARTYGSTIN from ledger where $Parent Like "%Sundry creditors%" or $Parent Like "%Sundry Debtors%"  and $PartyGSTIN is null
