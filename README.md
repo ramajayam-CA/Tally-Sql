@@ -1,5 +1,5 @@
 # Tally-Sql
-Tally Sql Queries
+Tally Sql Query
 
 
 https://help.tallysolutions.com/article/Tally.ERP9/Data_Management/DM_SQL_Query.htm
