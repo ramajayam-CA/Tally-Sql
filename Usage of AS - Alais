@@ -1,0 +1,6 @@
+Usage of Alais 
+
+;alais Can change the name of the Field or Method in the query
+
+
+Select $Name, $CreatedDate, $Masterid, $Alterid, $Updateddatetime, $Parent, $_PrimaryGroup, $$AscrAmt:$openingBalance as OpeningBalance, $$AscrAmt:$_ClosingBalance as ClosingBalance from ledger
