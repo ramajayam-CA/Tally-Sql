@@ -1,0 +1,5 @@
+#Get the List of ledgers with forensics data
+
+
+
+Select $Name, $Createdby, $CreatedDate, $Masterid, $Alterid, $Alteredon, $Alteredby, $Updateddatetime, $LastVoucherDate, $Parent, $_PrimaryGroup, $$AscrAmt:$openingBalance, $$AscrAmt:$_ClosingBalance from ledger order by $Alterid desc
