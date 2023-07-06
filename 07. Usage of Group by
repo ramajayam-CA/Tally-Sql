@@ -1,0 +1,1 @@
+Select $_PrimaryGroup, $OpeningBalance, $_ClosingBalance from Ledger Group by $_PrimaryGroup
