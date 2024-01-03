@@ -114,3 +114,15 @@ To sort the result of the query the ORDER BY keyword is used. The ORDER BY keywo
 1. For example, to display the names and debit closing balances of all Ledger objects sorted in descending order of closing balances
 
 SELECT $Name, $ClosingBalance FROM Ledger WHERE $$IsDr: $ClosingBalance ORDER BY $ClosingBalance DESC
+
+
+SELECT $Key, $MasterId, $AlterID, $VoucherNumber, $Date, $VoucherTypeName, $_Narration, $Reference, $ReferenceDate, $IsDeemedPositive, $NatureOfVoucher, $HasCashFlow, $EnteredBy, $AlteredBy, $AlteredOn, $SUpdatedDate, $SUpdatedTime, $LedgerName, $Amount, $DrAmount, $CrAmount, $Ledger_Parent, $Ledger_PrimaryGroup, $Party_LedgerName, $PARTY_GST_number, $Ledger_Master_GST_Number, $LedgerMasterGSTINGSTINtype, $HasBankEntry, $RComp_Name, $Year_Selected_from, $Year_Selected_to, $Company_number, $Led_Master_id, $Led_Alter_Id, $Led_IS_Revenue, $Path_of_the_CurrentCompany FROM A_Sirc_Vourcher7_1
+
+
+
+
+SELECT $Name, $_PrimaryGroup, $Parent, $OpeningBalance, $ClosingBalance, $_PrevYearBalance, $IsRevenue, $PartyGSTIN, $MasterId, $alteridd, $RComp_Name, $Year_Selected_from, $Year_Selected_to, $Company_number, $Path FROM A_Sirc_Leder_Detailed_7_1
+
+
+
+
