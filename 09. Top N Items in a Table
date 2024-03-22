@@ -1,2 +1,5 @@
 Select top 10 $Parent from ledger
 
+
+SELECT Top 3 $Name, $_PrimaryGroup, $Parent, $$AsCrAmt:$_ClosingBalance from Ledger where $_PrimaryGroup is like "Sundry Debtors" and  $$isdr:$_ClosingBalance and $_ClosingBalance > 0  order by $_ClosingBalance
+
