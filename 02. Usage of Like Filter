@@ -1,3 +1,6 @@
+
+*List of Sundry Debtors with GST number*
+
 Select $Name, $PARTYGSTIN from ledger where $Parent Like "%Sundry Debtors%"
 
 
