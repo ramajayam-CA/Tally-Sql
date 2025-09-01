@@ -1,0 +1,1 @@
+Select $Name, $_PrimaryGroup, $Parent, $OpeningBalance, $DebitTotals, $CreditTotals, $_ClosingBalance, $Isrevenue from ledger
